@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU+Guides&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   
+    <link rel="shortcut icon" href="assets/logotipo.svg" type="image/x-icon">
+    <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="Styles/navbar.css">
+    <link rel="stylesheet" href="Styles/pedidos.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+
+    <title>Creaciones Impresas</title>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/pedido.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="titulo">
+            <img src="./assets/logo-navbar.png" alt="Creaciones Impresas">
+            <h1> Creaciones-impresas </h1>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <div class="menu">
+            <a href="index.html"> INICIO </a>
+            <a href="catalogo.html"> CATALOGO </a>
+            <a href="pedidos.html"> PEDIDOS </a>
+        </div>
+    </header>
+
+    <section>
+        <h1>
+            Realizar un pedido
+        </h1>
+
+        <form id="form-pedido" novalidate>
+            <div class="label-input">
+                <label for="nombre">Nombre:</label>
+                <div class="campo">
+                    <input id="nombre" name="nombre" type="text" autocomplete="name" maxlength="60">
+                    <p class="error" id="error-nombre" hidden></p>
+                </div>
+            </div>
+            <div class="label-input">
+                <label for="telefono">Telefono:</label>
+                <div class="campo">
+                    <input id="telefono" name="telefono" type="tel" inputmode="numeric" autocomplete="tel" placeholder="614 141 9299">
+                    <p class="error" id="error-telefono" hidden></p>
+                </div>
+            </div>
+            <div class="label-input">
+                <label for="correo">Correo:</label>
+                <div class="campo">
+                    <input id="correo" name="correo" type="email" autocomplete="email" placeholder="correo@ejemplo.com">
+                    <p class="error" id="error-correo" hidden></p>
+                </div>
+            </div>
+            <div class="label-input-desc">
+                <label for="descripcion">Descripcion del pedido:</label>
+                <div class="campo">
+                    <textarea id="descripcion" name="descripcion" maxlength="400"></textarea>
+                    <p class="error" id="error-descripcion" hidden></p>
+                </div>
+            </div>
+            <div class="label-input">
+                <label for="diseno">Diseño:</label>
+                <div class="campo">
+                    <input id="diseno" name="diseno" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+                    <p class="error" id="error-diseno" hidden></p>
+                </div>
+            </div>
+            <button class="btn-enviar" type="submit">Enviar pedido</button>
+            <p class="mensaje-exito" id="exito-pedido" hidden>Pedido registrado correctamente.</p>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <img src="assets/logo-navbar.png" alt="">
+        <div class="contacto">
+            <i class="bi bi-whatsapp"></i>
+            <a href="tel:+526141419299"> +52 614 141 9299 </a>
+        </div>
+        <div class="contacto">
+            <i class="bi bi-facebook"></i>
+            <a href="https://www.facebook.com/share/19JwxTmz5i/"> Creaciones Impresas </a>
+        </div>
+        <img src="assets/logo-navbar.png" alt="">
+    </footer>
+</body>
+</html>

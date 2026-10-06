@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU+Guides&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Original+Surfer&family=Playwrite+BE+WAL+Guides&family=Playwrite+CU+Guides&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="assets/logotipo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="Styles/navbar.css">
+    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+
+    <title>Creaciones Impresas</title>
+
+    <script src="scripts/carrusel.js"></script>
+    <script src="scripts/resenas.js"></script>
+    <script src="scripts/navbar.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="titulo">
+            <img src="./assets/logo-navbar.png" alt="Creaciones Impresas">
+            <h1> Creaciones-impresas </h1>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <div class="menu">
+            <a href="index.html"> INICIO </a>
+            <a href="catalogo.html"> CATALOGO </a>
+            <a href="pedidos.html"> PEDIDOS </a>
+        </div>
+    </header>
+
+    <section>
+        <div class="informacion">
+            <div>
+                <h1> Creaciones impresas </h1>
+
+                <p>
+                    En Creaciones Impresas convertimos tus ideas en prendas únicas. Nos especializamos en
+                    estampado personalizado de playeras, sudaderas y más, con materiales de calidad y acabados
+                    profesionales que hacen que cada diseño luzca como fue imaginado. Ya sea para tu marca,
+                    tu equipo, un evento especial o simplemente para expresar tu estilo, aquí encuentras un
+                    proceso rápido, atención cercana y resultados que hablan por sí solos.
+                </p>
+            </div>
+            <img src="assets/logotipo.svg" alt="">
+        </div>
+
+        <!-- Carrusel -->
+        <div class="carrusel">
+            <div class="carousel" id="miCarrusel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/prod1.png" class="d-block" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Personalización</h5>
+                            <p>Realizamos diseños sublimados unicos y totalmente personalizados</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/prod2.png" class="d-block" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Grabado Lacer</h5>
+                            <p>Grabado de termos y cualquier tipo de superficie rigida con lacer</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/prod3.png" class="d-block" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Vinyl y DTF</h5>
+                            <p>Impresión de playeras con vinyl textil y DTF de la mas alta caliad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+
+                <div class="carousel-indicators"></div>
+            </div>
+        </div>
+
+
+        <!--- Reseñas -->
+        <div class="resenas">
+            <div class="titulos">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <div>
+                    <a href="agregarResena.html"> Agregar Reseñas </a>
+                    <i class="bi bi-person-hearts"></i>
+                </div>
+            </div>
+
+            <div class="resenaContenedor" id="resenaContenedor">
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <img src="assets/logo-navbar.png" alt="">
+        <div class="contacto">
+            <i class="bi bi-whatsapp"></i>
+            <a href="tel:+526141419299"> +52 614 141 9299 </a>
+        </div>
+        <div class="contacto">
+            <i class="bi bi-facebook"></i>
+            <a href="https://www.facebook.com/share/19JwxTmz5i/"> Creaciones Impresas </a>
+        </div>
+        <img src="assets/logo-navbar.png" alt="">
+    </footer>
+</body>
+
+</html>

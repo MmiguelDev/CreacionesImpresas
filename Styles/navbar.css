@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background: linear-gradient(to right, #8D2A4C, #531C29);   
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 50px 12px 30px;
+}
+
+.titulo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.titulo h1 {
+    color: white;
+    font-family: "Playwrite CU Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+}
+
+.titulo img {
+    height: 60px;
+    width: 60px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size:medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #F6339A;
+    text-decoration: underline;
+}
+
+.menu-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 10px 16px;
+        row-gap: 4px;
+    }
+
+    .navbar .titulo {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .navbar .titulo h1 {
+        font-size: clamp(0.95rem, 4.2vw, 1.35rem);
+        line-height: 1.2;
+    }
+
+    .navbar .titulo img {
+        height: 46px;
+        width: 46px;
+        flex-shrink: 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .navbar .menu.abierto {
+        display: flex;
+    }
+
+    .navbar .menu a {
+        padding: 12px 4px;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+    }
+}

@@ -1,0 +1,139 @@
+.catalogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalogo h1 {
+    text-align: center;
+    font-family: "Edu QLD Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: #155DFC;
+    margin: 20px;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+}
+
+.catalogo > .titulo {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+    width: 100%;
+    padding: 0 16px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px 20px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f0e6ea;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: min(370px, 100%);
+    height: auto;
+    min-height: 320px;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    color: #FF8904;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card p {
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: #8D2A4C;
+    color: white;
+    font-weight: bold;
+}
+
+.dropdown-btn:hover {
+    background-color: #531C29;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    min-width: 180px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    list-style: none;
+    margin: 0;
+    padding: 6px 0;
+    display: none;
+    z-index: 10;
+}
+
+.dropdown-menu.abierto {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background: #f0f0f0;
+}
+
+.dropdown-menu li.activo {
+    font-weight: bold;
+    color: #0066FF;
+}
+
+@media (max-width: 480px) {
+    .dropdown-menu {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU+Guides&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="assets/logotipo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="Styles/navbar.css">
+    <link rel="stylesheet" href="Styles/catalogo.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+
+    <title>Creaciones Impresas</title>
+
+    <script src="scripts/catalogo.js"></script>
+    <script src="scripts/navbar.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="titulo">
+            <img src="./assets/logo-navbar.png" alt="Creaciones Impresas">
+            <h1> Creaciones-impresas </h1>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <div class="menu">
+            <a href="index.html"> INICIO </a>
+            <a href="catalogo.html"> CATALOGO </a>
+            <a href="pedidos.html"> PEDIDOS </a>
+        </div>
+    </header>
+
+    <section>
+        <div class="catalogo">
+            <div class="titulo">
+                <h1> Nuestros productos realizados</h1>
+
+                <div class="dropdown" id="dropdown-categorias">
+                    <button class="dropdown-btn" id="dropdown-btn">
+                        Filtrar por categoria
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu" id="dropdown-menu">
+                        <!-- las categorias se generan por JS -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="productos" id="productos">
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <img src="assets/logo-navbar.png" alt="">
+        <div class="contacto">
+            <i class="bi bi-whatsapp"></i>
+            <a href="tel:+526141419299"> +52 614 141 9299 </a>
+        </div>
+        <div class="contacto">
+            <i class="bi bi-facebook"></i>
+            <a href="https://www.facebook.com/share/19JwxTmz5i/"> Creaciones Impresas </a>
+        </div>
+        <img src="assets/logo-navbar.png" alt="">
+    </footer>
+</body>
+
+</html>
